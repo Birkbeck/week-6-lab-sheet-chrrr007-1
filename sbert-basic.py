@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import os
 
 from sentence_transformers import SentenceTransformer
 from sklearn.decomposition import PCA
@@ -7,8 +8,10 @@ from sklearn.decomposition import PCA
 # 1. Load a pretrained Sentence Transformer model
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
+print(os.getcwd())
+exit()
 
-with open('data/sentences.txt', 'r', encoding='utf-8') as file:
+with open(r'data/sentences.txt', 'r', encoding='utf-8') as file:
     sentences = file.readlines()
 
 # 2. Calculate embeddings by calling model.encode()
