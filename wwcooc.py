@@ -34,7 +34,8 @@ if __name__ == "__main__":
     with open('Dorian_Gray-Wilde-1890.txt', 'r', encoding='utf-8') as file:
         text = file.read()
         matrix = build_cooccurrence_matrix(text)
-    print(matrix["coat"])
+    print(matrix["coat"])                   #prints the cooccuring words with "coat"
+    # print(matrix["coat"]["flower"])           #prints the nonumber of times both words cooccur together
     exit()
     # Display co-occurrence counts
     for word, co_words in matrix.items():
