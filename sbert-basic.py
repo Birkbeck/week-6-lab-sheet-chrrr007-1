@@ -8,8 +8,8 @@ from sklearn.decomposition import PCA
 # 1. Load a pretrained Sentence Transformer model
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
-print(os.getcwd())
-exit()
+# print(os.getcwd())  #if working directory doesn't work, enter thsi code and print to get current working directory to copy and use
+# exit()          #exit after this print statement     
 
 with open(r'data/sentences.txt', 'r', encoding='utf-8') as file:
     sentences = file.readlines()
